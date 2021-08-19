@@ -1,0 +1,39 @@
+body {
+  border: solid black;
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  text-transform: uppercase;
+}
+
+.free-shipping {
+  text-transform: uppercase;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: blue;
+}
+
+.details {
+  text-transform: uppercase;
+}
+
+button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+

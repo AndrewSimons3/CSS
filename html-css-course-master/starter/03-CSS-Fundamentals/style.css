@@ -1,3 +1,7 @@
+* {
+  
+}
+
 body {
   color: #444;
   font-family: sans-serif;
@@ -127,4 +131,8 @@ a:active {
 
 footer p {
   color: green;
+}
+
+nav {
+  font-size: 18px;
 }
