@@ -23,6 +23,7 @@ article {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .post-header {
@@ -154,8 +155,12 @@ a:active {
   font-style: italic;
 }
 
+.post-img {
+  width: 800px;
+}
+
 /* Resolving Conflicts */
-#copyright {
+/* #copyright {
   color: red;
 }
 
@@ -169,5 +174,5 @@ a:active {
 
 footer p {
   color: green;
-}
+} */
 
