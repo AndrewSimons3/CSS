@@ -156,7 +156,8 @@ a:active {
 }
 
 .post-img {
-  width: 800px;
+  width: 100%;
+  height: auto;
 }
 
 /* Resolving Conflicts */
