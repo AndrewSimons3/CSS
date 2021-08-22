@@ -8,6 +8,10 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  width: 700px;
+}
+
 nav {
   font-size: 18px;
 }
