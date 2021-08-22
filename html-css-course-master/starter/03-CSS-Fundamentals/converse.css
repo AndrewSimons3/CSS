@@ -5,6 +5,20 @@
 
 body {
   font-family: sans-serif;
+  position: relative;
+}
+
+.sale {
+  position: absolute;
+  top: -15px;
+  left: 40px;
+  background-color: red;
+  width: 75px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 2px;
 }
 
 .product {
