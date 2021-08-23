@@ -1,5 +1,5 @@
 * {
-  /* border-top: 10px solid #1098ad; */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,6 @@
 body {
   color: #444;
   font-family: sans-serif;
-
   border-top: 10px solid #1098ad;
   position: relative;
 }
@@ -48,10 +47,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -134,15 +130,8 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
-
-body {
-  /* background-color: orangered; */
-}
-
-/* .first-li {
-  font-weight: bold;
-} */
 
 li:first-child {
   font-weight: bold;
@@ -150,15 +139,6 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
-}
-
-li:nth-child(even) {
-  /* color: red; */
-}
-
-/* Misconception: this won't work! */
-article p:first-child {
-  color: red;
 }
 
 /* Styling links */
@@ -270,7 +250,7 @@ nav {
 
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: block;
 }
 
