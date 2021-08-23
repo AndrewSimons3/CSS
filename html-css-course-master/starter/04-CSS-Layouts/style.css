@@ -22,6 +22,7 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
+  background-color: red;
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -244,24 +245,33 @@ h2::before {
   right: -25px;
 }
 
-/* Resolving conflicts */
-/* #copyright {
-  color: red;
+/*FLOATS */
+.author-image {
+  float: left;
+  margin-bottom: 20px;
 }
 
-.copyright {
-  color: blue;
+.author {
+  /* padding-left: 80px; */
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
-.text {
-  color: yellow;
+h1 {
+  float: left;
 }
 
-footer p {
-  color: green !important;
-} */
+nav {
+  float: right;
+}
 
-/* nav a:link,
-nav p {
-  font-size: 18px;
-} */
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
