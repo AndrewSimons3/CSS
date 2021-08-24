@@ -287,12 +287,15 @@ footer {
 .related-post {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .related-link:link {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .related-author {
