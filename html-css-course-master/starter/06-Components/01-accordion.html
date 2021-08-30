@@ -42,8 +42,9 @@ GREY COLOR: #343a40
         flex-direction: column;
         gap: 24px;
       }
+
       .item {
-        box-shadow: 0 0 32px rgba(0,0,0,0.1);
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
         padding: 24px;
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -51,20 +52,29 @@ GREY COLOR: #343a40
         row-gap: 32px;
         align-items: center;
       }
+
       .number,
       .text {
         font-size: 24px;
         font-weight: 500;
-        color: #087f5b;
+        /* color: #087f5b; */
       }
+
+      .number {
+        color: #ced4da;
+      }
+
       .icon {
         height: 24px;
         width: 24px;
         stroke: #087f5b;
       }
+
       .hidden-box {
         grid-column: 2;
+        display: none;
       }
+
       .hidden-box p {
         line-height: 1.6;
         margin-bottom: 24px;
@@ -76,9 +86,20 @@ GREY COLOR: #343a40
         display: flex;
         flex-direction: column;
         gap: 12px;
-
       }
-    
+
+      .open {
+        border-top: 4px solid #087f5b;
+      }
+
+      .open .hidden-box {
+        display: block;
+      }
+
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
     </style>
   </head>
   <body>
@@ -120,7 +141,7 @@ GREY COLOR: #343a40
           </ul>
         </div>
       </div>
-      <div class="item">
+      <div class="item open">
         <p class="number">02</p>
         <p class="text">How long do I have to return my chair?</p>
         <svg
@@ -195,6 +216,5 @@ GREY COLOR: #343a40
         </div>
       </div>
     </div>
-    
   </body>
 </html>
