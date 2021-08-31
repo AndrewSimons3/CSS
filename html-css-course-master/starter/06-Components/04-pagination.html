@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+    .chev-right {
+      border: 1px solid #087f5b;
+      border-radius: 50%;
+      color: #087f5b;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .chev-left {
+      border: 1px solid #087f5b;
+      border-radius: 50%;
+      color: #087f5b;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .chev-right:hover {
+      color: #fff;
+      background-color: #087f5b;
+    }
+
+    .chev-left:hover {
+      color: #fff;
+      background-color: #087f5b;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 12px 0 12px;
+      padding: 5px;
+    }
+
+    a:hover {
+      /* border: 1px solid #087f5b; */
+      background-color: #087f5b;
+      border-radius: 50%;
+      color: #fff;
+      padding: 5px;
+    }
+  </style>
+
+  <body>
+    <!-- <button class="btn--left"> -->
+    <div class="container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="chev-left"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        height="24px"
+        width="24px"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+      <!-- </button> -->
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <span>...</span>
+      <a href="#">23</a>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="chev-right"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        height="24px"
+        width="24px"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </div>
+  </body>
+</html>
