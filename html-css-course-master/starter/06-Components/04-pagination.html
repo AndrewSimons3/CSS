@@ -3,108 +3,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
 
   <style>
+
+    *{
+      margin:0;
+      padding: 0;
+      box-sizing:border-box;
+    }
     body {
-      width: 800px;
-      margin: 0 auto;
+      font-family: "Inter", sans-serif;
+      color: #343a40;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
     }
 
-    .container {
+    .pagination {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      border: 1px solid #087f5b;
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      background: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #087f5b;
+    }
+
+    .btn-icon {
+      height: 24px;
+      width: 24px;
+      stroke: #087f5b;
+    }
+
+    .btn:hover .btn-icon {
+      stroke: #fff;
+    }
+
+    
+
+    .page-link:link,
+    .page-link:visited {
+      font-size: 18px;
+      color: #343434;
+      text-decoration: none;
+      height: 36px;
+      width: 36px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 100px;
-    }
-    .chev-right {
-      border: 1px solid #087f5b;
       border-radius: 50%;
-      color: #087f5b;
-      cursor: pointer;
-      padding: 5px;
     }
 
-    .chev-left {
-      border: 1px solid #087f5b;
+    .page-link:hover, 
+    .page-link:active {
+      background-color: #087f5b;
+      color: #fff;
       border-radius: 50%;
-      color: #087f5b;
-      cursor: pointer;
-      padding: 5px;
     }
 
-    .chev-right:hover {
-      color: #fff;
+    .dots {
+      color: #868e96;
+    }
+
+    /* .page-link--current {
       background-color: #087f5b;
-    }
-
-    .chev-left:hover {
       color: #fff;
-      background-color: #087f5b;
-    }
-
-    a {
-      text-decoration: none;
-      color: #000;
-      margin: 0 12px 0 12px;
-      padding: 5px;
-    }
-
-    a:hover {
-      /* border: 1px solid #087f5b; */
-      background-color: #087f5b;
-      border-radius: 50%;
-      color: #fff;
-      padding: 5px;
-    }
+    } */
   </style>
 
   <body>
     <!-- <button class="btn--left"> -->
-    <div class="container">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="chev-left"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        height="24px"
-        width="24px"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-      <!-- </button> -->
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <span>...</span>
-      <a href="#">23</a>
+    <div class="pagination">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="chev-right"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        height="24px"
-        width="24px"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
+      <a href="#" class="page-link">1</a>
+      <a href="#" class="page-link">2</a>
+      <a href="#" class="page-link page-link--current">3</a>
+      <a href="#" class="page-link">4</a>
+      <a href="#" class="page-link">5</a>
+      <a href="#" class="page-link">6</a>
+      <span class="dots">...</span>
+      <a href="#" class="page-link">23</a>
+
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
     </div>
   </body>
 </html>
