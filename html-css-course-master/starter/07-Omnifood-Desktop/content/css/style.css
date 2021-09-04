@@ -58,8 +58,24 @@ body {
 }
 
 /****************/
-/* GENERAL COMPONENTS */
+/* GENERAL REUSABLE COMPONENTS */
 /****************/
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .heading-primary {
   font-size: 5.2rem;
@@ -249,37 +265,5 @@ body {
   padding: 0 3.2rem;
 }
 
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
 
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
 
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.section-how div {
-  padding: 100px;
-  font-size: 50px;
-}
-
-.section-how div:nth-child(1) {
-  background-color: aqua;
-}
-.section-how div:nth-child(2) {
-  background-color: violet;
-}
-.section-how div:nth-child(3) {
-  background-color: yellow;
-}
-.section-how div:nth-child(4) {
-  background-color: brown;
-}
